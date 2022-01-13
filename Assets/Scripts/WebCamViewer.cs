@@ -4,18 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 public class WebCamViewer : MonoBehaviour
 {
+	[SerializeField] Renderer rend;
     string camName;
 	public const string RICOH_DRIVER_NAME = "Theta UVC";
-	// public const string RICOH_DRIVER_NAME = "RICOH THETA Z1";
+	// public const string RICOH_DRIVER_NAME = "RICOH THETA V/Z1 Full HD";
     WebCamTexture mycam;
-    RawImage img;
+	
     void Start()
     {
 		WebCamDevice[] devices = WebCamTexture.devices;
-		// Debug.Log("Number of web cams connected: " + devices.Length);
+		Debug.Log("Number of web cams connected: " + devices.Length);
 		for (int i = 0; i < devices.Length; i++)
 		{
-			// Debug.Log(i + " " + devices[i].name);
+			Debug.Log(i + " " + devices[i].name);
 			if (devices[i].name == RICOH_DRIVER_NAME)
 			{
 				camName = devices[i].name;
@@ -32,23 +33,20 @@ public class WebCamViewer : MonoBehaviour
 
 		mycam = new WebCamTexture();
 		mycam.deviceName = camName;
-
+		rend.material.mainTexture = mycam;
 		mycam.Play();
-		Debug.Log(mycam.isReadable);
-		Debug.Log(mycam.dimension);
-		Debug.Log(mycam.updateCount);
     }
 
     // Update is called once per frame
     void Update()
     {
-		Debug.Log("testing");
+		//Debug.Log("testing");
 		if(!mycam.isPlaying)
 		{
-			mycam.Play();
+			mycam.Play();		
+			rend.material.mainTexture = mycam;
 		}
-        img = transform.GetComponent<RawImage>();
-		img.texture = mycam;
-		img.material.mainTexture = mycam;
+
+
     }
 }

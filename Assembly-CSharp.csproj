@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4c5e0acd-f16b-e05e-1258-bfbce6709a31}</ProjectGuid>
+    <ProjectGuid>{5ae25892-35f1-ebe1-4eb1-ebadd64bff24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\webCamDetect.cs" />
-     <Compile Include="Assets\Scripts\test.cs" />
      <Compile Include="Assets\Scripts\WebCamViewer.cs" />
+     <Compile Include="Assets\Scripts\webCamDetect.cs" />
+     <Compile Include="Assets\Scripts\TestingScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -261,11 +261,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-        <HintPath>C:\Users\user\rrobo\theta-z1-viewer\Assets\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\user\rrobo\theta-z1-viewer\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\user\rrobo\theta-v-htc-vive-steamvr\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -613,95 +610,79 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.21f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenVR">
-        <HintPath>C:\Users\user\rrobo\theta-z1-viewer\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
+        <HintPath>C:\Users\user\rrobo\theta-v-htc-vive-steamvr\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenVR.Editor">
-        <HintPath>C:\Users\user\rrobo\theta-z1-viewer\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
+        <HintPath>C:\Users\user\rrobo\theta-v-htc-vive-steamvr\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{06a0bad3-d905-a18f-6151-1e6aebe5596d}</Project>
-      <Name>SteamVR_Input_Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{82c4ec14-a08b-b838-792e-b4abb423af05}</Project>
+      <Project>{e270c7a2-5b1e-8fa2-adb4-2a438ac74d9b}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR.csproj">
-      <Project>{956bccfb-cf05-1461-b2d2-cbbf278517c8}</Project>
-      <Name>SteamVR</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{0d22b0ac-6a9b-f1c3-068c-908389f24bb5}</Project>
+      <Project>{4c2a723e-0310-372b-0762-d338db5bf396}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{44ca3819-304e-b403-c720-23dabfc5e348}</Project>
+      <Project>{2f8fe2fe-da4d-d0e9-5c42-79b044e32cd3}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Editor.csproj">
-      <Project>{1a2a84c1-7d79-d4c2-0b0d-60fc78147cc9}</Project>
+      <Project>{7f29b513-a311-256f-c514-24e5c17de0e8}</Project>
       <Name>Unity.XR.Management.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{483072bc-cf57-2349-070b-aa4c38af98a2}</Project>
+      <Project>{d8bd08fb-9b3a-f3f7-4069-5178d2a21eb8}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{ab613f8b-0e2b-af2f-31e7-e0dd66dfd4f0}</Project>
+      <Project>{a852a0eb-ed5d-245c-1879-98c572f9faae}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{f00cb8df-35cd-3fd8-88e9-a86a7bf1a80a}</Project>
-      <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Subsystem.Registration.csproj">
-      <Project>{e672d768-767e-dca6-0f37-5a99f3a9b529}</Project>
+      <Project>{505612e7-3ba8-6225-bc40-80f1dcf04983}</Project>
       <Name>Unity.Subsystem.Registration</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{cb22d698-f1c4-5c5b-f986-53f041e99bff}</Project>
+      <Project>{c7f10662-7b4b-f1d0-9ee3-c4ffa56a84f8}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{30904785-6355-4876-0e8d-69f40666b733}</Project>
+      <Project>{c95ce487-2e3c-fdd9-30c6-ad40911fc4f5}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{474d76a2-6b88-58f4-50a7-7ffa60cc6f40}</Project>
+      <Project>{8b44cae4-1df6-4a7d-bf85-32ab5de2e249}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{538d5db2-0f30-294d-5091-cfc1f9491eed}</Project>
+      <Project>{be0f5a10-2eba-9baf-14f6-9fb6ae5c1539}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{989e069d-2f4e-e629-bb93-2a154dda3195}</Project>
+      <Project>{5717bd93-5843-1db3-9e5d-413b1e64d991}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
-    <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{4c8ebc24-df86-0e24-d52d-b78aede2fc26}</Project>
-      <Name>SteamVR_Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{b69b213c-e3eb-4850-14a2-03e265533878}</Project>
+      <Project>{b769028c-4109-2ef0-839b-139ba2f3469a}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{ecb88339-8c55-62da-6759-18e72152554e}</Project>
+      <Project>{cbe78150-29e4-4a13-fc4f-53ee6ca3e912}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
-      <Project>{26f99e79-eed6-c0bb-8b65-f0e64311f5d8}</Project>
+      <Project>{5069fff7-920c-81b8-77d7-6b8895d881a5}</Project>
       <Name>UnityEditor.XR.LegacyInputHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{a0af6d50-cbb0-f5a8-02c3-bb3d65fe4c6d}</Project>
+      <Project>{5062c4ea-e878-ce8f-c901-871c6202ed49}</Project>
       <Name>Unity.XR.Management</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
-      <Project>{ee8e3841-09ac-75be-b83d-802fc58a762b}</Project>
+      <Project>{3226d598-1945-ce3e-969e-d5867eed89bc}</Project>
       <Name>UnityEditor.SpatialTracking</Name>
     </ProjectReference>
   </ItemGroup>
